@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About-me</title>
+  <style>
+    @keyframes fadeLeft {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    @keyframes fadeRight {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    .link-container {
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container-opened {
+      border-bottom: 3px solid black;
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container:hover {
+      border-bottom: 3px solid black;
+    }
+
+    body {
+      margin: 0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fffaee;
+    }
+
+    header {
+      width: 100%;
+      height: 85px;
+      background-color: #fffaee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      border-bottom: 1px solid #D1D1D1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1A1A1A;
+      font-family: 'Franklin Gothic';
+      font-size: 1.2em;
+    }
+
+    img {
+      width: 320px;
+      height: 350px;
+      object-fit: cover;
+      object-position: 40% 60%;
+      opacity: 0;
+      animation: fadeRight .8s ease-in-out forwards;
+      animation-delay: .1s;
+      background-color: #ffb9b9;
+      box-shadow: 0 0 20px red;
+    }
+
+    .content {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      width: 100%;
+      height: 500px;
+      margin-top: 50px;
+    }
+
+    .div-content {
+      width: 500px;
+      opacity: 0;
+      animation: fadeLeft .8s ease-in forwards;
+      animation-delay: .8s;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-family: 'Franklin Gothic';
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1.3em;
+      font-family: system-ui;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <div class="link-container">HOME</div>
+    </a>
+    <a href="about-me.html">
+      <div class="link-container-opened">ABOUT ME</div>
+    </a>
+    <a href="contact.html">
+      <div class="link-container">CONTACTS</div>
+    </a>
+    <a href="">
+      <div class="link-container">PROJECTS</div>
+    </a>
+  </header>
+  <div class="content">
+    <div class="div-img"><img src="images/profile.png" alt=""></div>
+    <div class="div-content">
+      <h1>ABOUT ME</h1>
+      <p>Hard working student, who is passionate to learn more on technology
+        and able to cooperate and work as a team. Im someone who turn ideas into action, i enjoy making problems and
+        learning new skills and pushing my self to grow both personaly and professionaly.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
