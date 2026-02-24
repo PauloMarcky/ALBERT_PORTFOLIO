@@ -4,11 +4,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacts</title>
+  <title>Home</title>
+  <style>
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    body {
+      margin: 0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fffaee;
+    }
+
+    /* HEADER STYLES */
+
+    header {
+      width: 100%;
+      height: 85px;
+      background-color: #fffaee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      border-bottom: 1px solid #D1D1D1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1A1A1A;
+      font-family: 'Franklin Gothic';
+      font-size: 1.2em;
+    }
+
+    .link-container {
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container-opened {
+      border-bottom: 3px solid black;
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container:hover {
+      border-bottom: 3px solid black;
+    }
+
+
+    /* MAIN CONTAINER */
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #1a1a1a;
+      margin-bottom: 0px;
+      margin-top: 10px;
+      font-family: system-ui;
+      font-size: 3em;
+      opacity: 0;
+      animation: fadeup 1s ease-in-out forwards;
+      animation-delay: .3s;
+    }
+
+    h2 {
+      color: #d00202;
+      padding: 0px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-family: system-ui;
+      font-size: 1.5em;
+      opacity: 0;
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: .7s;
+      text-align: center;
+    }
+
+    .contacts {
+      background-color: rgb(255, 219, 219);
+      margin: 10px;
+      width: 400px;
+      height: 60px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background-color: rgb(255, 96, 96);
+      color: white;
+    }
+
+    #contact0 {
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: 1.1s;
+      opacity: 0;
+    }
+
+    #contact1 {
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: 1.2s;
+      opacity: 0;
+    }
+
+    #contact2 {
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: 1.3s;
+      opacity: 0;
+    }
+
+    #contact3 {
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: 1.4s;
+      opacity: 0;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <a href="index.html">
+      <div class="link-container">HOME</div>
+    </a>
+    <a href="about-me.html">
+      <div class="link-container">ABOUT ME</div>
+    </a>
+    <a href="contact.html">
+      <div class="link-container-opened">CONTACTS</div>
+    </a>
+    <a href="project.html">
+      <div class="link-container">PROJECTS</div>
+    </a>
+  </header>
+  <div class="contact-container">
+    <div class="title">
+      <h1>CONTACT INFORMATIONS</h1>
+      <h2>REACH OUT FOR MORE INFO</h2>
+    </div>
+    <div class="contacts" id="contact0">
+      <img src="images/email.png">
+      <p>qwertyuiop@gmail.com</p>
+      <a href=""><button>➤</button>
+      </a>
+    </div>
+    <div class="contacts" id="contact1">
+      <img src="images/fb_clear.png">
+      <p>Albert Santos</p>
+      <a href=""><button>➤</button>
+      </a>
+    </div>
+    <div class="contacts" id="contact2">
+      <img src="images/insta_clear.png">
+      <p>Albert Santos</p>
+      <a href=""><button>➤</button>
+      </a>
+    </div>
+    <div class="contacts" id="contact3">
+      <img src="images/phone.png">
+      <p>+63 123 1234 123</p>
+      <a href=""><button>➤</button>
+      </a>
+    </div>
 
+  </div>
 </body>
 
 </html>

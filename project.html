@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    @keyframes fadeup {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    body {
+      margin: 0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fffaee;
+    }
+
+    header {
+      width: 100%;
+      height: 85px;
+      background-color: #fffaee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      border-bottom: 1px solid #D1D1D1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1A1A1A;
+      font-family: 'Franklin Gothic';
+      font-size: 1.2em;
+    }
+
+    .link-container {
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container-opened {
+      border-bottom: 3px solid black;
+      height: 85px;
+      width: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-container:hover {
+      border-bottom: 3px solid black;
+    }
+
+    h1 {
+      color: #1a1a1a;
+      margin-bottom: 0px;
+      margin-top: 10px;
+      font-family: system-ui;
+      font-size: 3em;
+      opacity: 0;
+      animation: fadeup 1s ease-in-out forwards;
+      animation-delay: .3s;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <div class="link-container">HOME</div>
+    </a>
+    <a href="about-me.html">
+      <div class="link-container">ABOUT ME</div>
+    </a>
+    <a href="contact.html">
+      <div class="link-container">CONTACTS</div>
+    </a>
+    <a href="">
+      <div class="link-container-opened">PROJECTS</div>
+    </a>
+  </header>
+  <div class="project-container">
+    <h1>COMING SOON...</h1>
+  </div>
+</body>
+
+</html>
