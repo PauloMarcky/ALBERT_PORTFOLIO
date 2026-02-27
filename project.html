@@ -75,12 +75,31 @@
       animation-delay: .3s;
     }
 
-    .project-container {
+    .projects-container {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      gap: 20px;
       align-items: center;
-      margin-top: 50px;
+      justify-content: center;
+      height: 300px;
+      width: 900px;
+      margin: auto;
+      margin-top: 120px;
+      overflow-x: auto;
+      opacity: 0;
+      animation: fadeup .6s ease-in-out forwards;
+    }
+
+    .projects-container>div {
+      height: 200px;
+      width: 500px;
+      flex-shrink: 0;
+      background-color: #bc2020;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fffaee;
+      font-size: 1.3em;
+      font-family: 'Segoe UI';
     }
   </style>
 </head>
@@ -100,9 +119,28 @@
       <div class="link-container-opened">PROJECTS</div>
     </a>
   </header>
-  <div class="project-container">
-    <h1>COMING SOON...</h1>
+
+  <div class="projects-container">
+    <div>
+      <p>Coming Soon..</p>
+    </div>
+    <div>
+      <p>Coming Soon..</p>
+    </div>
+    <div>
+      <p>Coming Soon..</p>
+    </div>
+    <div>
+      <p>Coming Soon..</p>
+    </div>
+    <div>
+      <p>Coming Soon..</p>
+    </div>
+    <div>
+      <p>Coming Soon..</p>
+    </div>
   </div>
+
 </body>
 
 </html>

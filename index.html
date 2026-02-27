@@ -14,7 +14,7 @@
 
       60% {
         opacity: 1;
-        transform: translateY(10px);
+        transform: translateY(0px);
       }
 
       100% {
@@ -60,13 +60,19 @@
       font-size: 1.2em;
     }
 
-    img {
+    .img-container {
+      opacity: 0;
+      animation: fadeup .5s ease-out forwards;
+      animation-delay: .3s;
+      clip-path: inset(-5% 0 2% 0);
+    }
+
+    .img-container img {
       width: 350px;
       height: 350px;
       border-radius: 50%;
       object-fit: cover;
       object-position: 10% 90%;
-      box-shadow: 0 0 20px #d00202;
       animation: pop-up 1.5s ease-in-out infinite;
       background-color: #ffb9b9;
     }
@@ -87,7 +93,7 @@
       font-size: 3em;
       opacity: 0;
       animation: fadeup 1s ease-in-out forwards;
-      animation-delay: .3s;
+      animation-delay: .5s;
     }
 
     h2 {
@@ -98,7 +104,7 @@
       font-size: 1.5em;
       opacity: 0;
       animation: fadeup 1s ease-in-out forwards;
-      animation-delay: .9s;
+      animation-delay: 1s;
     }
 
     .link-container {
@@ -140,7 +146,9 @@
     </a>
   </header>
   <div class="home-container">
-    <img src="images/profile.png" alt="">
+    <div class="img-container">
+      <img src="images/profile.png" alt="">
+    </div>
     <div>
       <h1>Hello there, I am Albert Jan Santos</h1>
     </div>
