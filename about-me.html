@@ -39,7 +39,7 @@
     }
 
     .link-container-opened {
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #FDE68A;
       height: 85px;
       width: 130px;
       display: flex;
@@ -48,32 +48,33 @@
     }
 
     .link-container:hover {
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #FDE68A;
     }
 
     body {
       margin: 0%;
       width: 100vw;
       height: 100vh;
-      background-color: #fffaee;
+      background:
+        radial-gradient(at bottom, #991b1b 0%, #570a0a 80%),
+        radial-gradient(at 100% 100%, #ff7878 70%);
     }
 
     header {
       width: 100%;
       height: 85px;
-      background-color: #fffaee;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 30px;
-      border-bottom: 1px solid #D1D1D1;
+      border-bottom: .5px solid #892626;
     }
 
     a {
       text-decoration: none;
-      color: #1A1A1A;
+      color: #FFF1F1;
       font-family: 'Franklin Gothic';
-      font-size: 1.2em;
+      font-size: 1.em;
     }
 
     img {
@@ -100,9 +101,6 @@
 
     .div-content {
       width: 500px;
-      opacity: 0;
-      animation: fadeLeft .8s ease-in forwards;
-      animation-delay: .8s;
     }
 
     h1 {
@@ -110,20 +108,31 @@
       font-family: 'Franklin Gothic';
       margin-bottom: 10px;
       margin-top: 10px;
+      color: #FFF1F1;
+      opacity: 0;
+      animation: fadeLeft .5s ease-in forwards;
+      animation-delay: .8s;
     }
 
     h3 {
-      color: #d00202;
+      color: #FDE68A;
       padding: 0px;
       margin: 0%;
       font-family: system-ui;
       font-size: 1.5em;
+      opacity: 0;
+      animation: fadeLeft .5s ease-in forwards;
+      animation-delay: 1s;
     }
 
     p {
       font-size: 1.3em;
       font-family: system-ui;
       text-align: justify;
+      color: #FFF1F1;
+      opacity: 0;
+      animation: fadeLeft .5s ease-in forwards;
+      animation-delay: 1.2s;
     }
   </style>
 </head>
